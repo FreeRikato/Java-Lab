@@ -1,0 +1,16 @@
+CREATE TABLE ICCT20
+( 
+  Team varchar2(50) NOT NULL,
+  M number(10) NOT NULL,
+  W number(10) NOT NULL,
+  L number(10) NOT NULL,
+  pts number(10) NOT NULL
+);
+
+INSERT ALL
+  INTO ICCT20(Team, M, W, L, pts) VALUES ('IND', 4, 3, 1, 6)
+  INTO ICCT20(Team, M, W, L, pts) VALUES ('SA', 3, 2, 0, 5)
+  INTO ICCT20(Team, M, W, L, pts) VALUES ('BA', 4, 2, 2, 4)
+SELECT * FROM dual;
+
+SELECT * FROM ICCT20
